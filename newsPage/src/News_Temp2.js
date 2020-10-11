@@ -95,6 +95,8 @@ const renderNewsData = ({item}) => <NewsCard news={item}></NewsCard>;
 const renderBanner = ({item}) => <MyBanner banner={item}></MyBanner>;
 
 const News = () => {
+ 
+
   return (
     <SafeAreaView style={styles.safeAreaView0}>
       <View style={styles.view0}>
@@ -103,7 +105,6 @@ const News = () => {
           renderItem={renderBanner}
           keyExtractor={(item, id) => item.id.toString()}
           horizontal={true}
-         
         />
       </View>
       <View style={styles.view0}>
@@ -112,9 +113,6 @@ const News = () => {
           renderItem={renderNewsData}
           keyExtractor={(item, id) => item.id.toString()}
           numColumns={2}
-          contentContainerStyle={{
-            justifyContent: 'space-between',
-          }}
         />
       </View>
     </SafeAreaView>

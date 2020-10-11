@@ -1,7 +1,7 @@
 import React from 'react';
 import {View, Text, Image, StyleSheet, Dimensions} from 'react-native';
 
-const NewsCard = ({news}) => {
+const MyNewsCard = ({news}) => {
     return (
       <View style={styles.container}>
         <Image style={styles.image} source={{uri:  news.imageUrl}} />
@@ -38,4 +38,4 @@ const NewsCard = ({news}) => {
     }
   });
   
-  export {NewsCard};
+  export {MyNewsCard};
